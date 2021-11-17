@@ -1,0 +1,46 @@
+body {
+  background: #EA7158;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.container {
+  background-color: #F5F5DC;
+  width: 600px;
+  border: 3px solid black;
+  margin-top: 250px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px;
+}
+
+.col {
+  padding: 10px;
+}
+
+.quizOptions {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.startButton {
+  background-color: gray;
+  color: black;
+  border: 2px solid black;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+.quizOptions {
+  margin: 10px;
+}
