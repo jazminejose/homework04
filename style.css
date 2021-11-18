@@ -9,7 +9,7 @@ h1 {
 
 .container {
   background-color: #F5F5DC;
-  width: 600px;
+  width: 650px;
   border: 3px solid black;
   margin-top: 250px;
   border-radius: 10px;
@@ -31,14 +31,19 @@ h1 {
 }
 
 .startButton {
+  margin: 20px;
+  radius: 5px;
+}
+
+.startButton:hover {
   background-color: gray;
   color: black;
-  border: 2px solid black;
-  border-radius: 2px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
+  border: 1px solid black;
+  border-radius: 5x;
+  -webkit-border-radius: 5x;
+  -moz-border-radius: 5x;
+  -ms-border-radius: 5x;
+  -o-border-radius: 5x;
 }
 
 .quizOptions {

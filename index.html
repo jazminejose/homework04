@@ -23,41 +23,27 @@
 <body>
   
 <div class="container">
-
-
+<div class ="row">
+  <div class="col">
 <h1>CODING QUIZ</h1>
-
-<button onclick="onTimer()">Clickme</button>
-<div id="counter">Timer: <span id="timer"></span></div>
-
-<div class="row">
-  <div class="col">
-   
-
-
   </div>
-  <div class="col">
-    <div id="quiz">
-<div id="displayQuestions"></div>
-    <button id="quizOptions" class="quizOptions">answer</button>
-    <button id="quizOptions" class="quizOptions">answer</button>
+<div class="col-5">
+  Time remaining: <span id="count">60</span> seconds
+  <br>
+<button class="startButton btn btn-primary" onclick="start()">START</button>
+</div>
 
-    <button id="startOptions" class="quizOptions">answer</button>
-    <button id="startOptions" class="quizOptions">answer</button>
-    </div>
-    <button id="startButton" class="startButton">Start Quiz</button>
-    <div id="results"></div>
-  </div>
+<div id="quizQuestions"></div>
+<div id="quizOptions"></div>
+
+ 
 </div>
 
 
+<!-- <button id="startButton" class="startButton btn btn-primary">Start Quiz</button> -->
 
 
 </div>
-
-
-
-
     <script src="script.js"></script>
 </body>
 </html>
