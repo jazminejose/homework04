@@ -2,13 +2,11 @@
 <html lang="en">
 
 <head>
-  <!-- required meta tags -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Coding Quiz</title>
 
-  <link rel="stylesheet" href="./reset.css">
   <!-- font goes here -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,33 +15,64 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <!-- Link to CSS -->
-  <link rel="stylesheet" href="./style.css">
-<body>
   
-<div class="container">
-<div class ="row">
-  <div class="col">
-<h1>CODING QUIZ</h1>
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="style.css">
+  </head>
+
+
+<body>
+
+
+
+  <div class="container">
+
+<div id="feedback" class="feedback hide"></div>
+    <div id="start-screen" class="start">
+      <h1>How well do you know javascript?</h1>
+      <p>
+        Take this quiz to test how well you know javascript.<br> There will be a total of <strong>6 questions</strong>. You will have a minute to complete this quiz. However, with every question answered incorrect; points will be taken. So, be careful and goodluck! 
+      </p>
+      <button id="start" class="btn btn-primary btn-lg">Start Quiz</button>
+    </div>
+
+    <div id="questions" class="hide">
+      <div class="timer" class="hide">Time Remaining: <span id="counter">0</span></div>
+      <h2 id="question-title"></h2>
+      <div id="choices" class="choices"></div>
+    </div>
+
+    <div id="end-screen" class="hide">
+      <h2>You have completed the quiz.</h2>
+      <p>Your final score is <span id="final-score"></span>.</p>
+      <div class="scores">
+        <button id="highscores" class="btn btn-primary btn-sm">View Highscores</button></div>
+      <p>
+        <br>
+        Enter name: <input type="text" id="initials" max="3" />
+        <button id="submit" class="btn btn-primary btn-sm">Submit</button>
+      </p>
+    </div>
+
+    <div id="displayScores" class="hide">
+      <h2>Highscores</h2>
+          <span id="allScores"></span>
+        <div id="scores">
+
+
+        </div>
+      </p>
+    </div>
+
+
+
   </div>
-<div class="col-5">
-  Time remaining: <span id="count">60</span> seconds
-  <br>
-<button class="startButton btn btn-primary" onclick="start()">START</button>
-</div>
 
-<div id="quizQuestions"></div>
-<div id="quizOptions"></div>
-
- 
-</div>
-
-
-<!-- <button id="startButton" class="startButton btn btn-primary">Start Quiz</button> -->
-
-
-</div>
-    <script src="script.js"></script>
+  <!-- <script src="questions.js"></script> -->
+  <script src="script.js"></script>
 </body>
+
 </html>
+
+
+

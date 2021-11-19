@@ -1,10 +1,16 @@
 body {
-  background: #EA7158;
+  background: #b18076;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 h1 {
   font-size: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  padding: 5px;
 }
 
 .container {
@@ -18,34 +24,62 @@ h1 {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   box-shadow: 5px 5px 5px 5px;
+  padding: 20px;
 }
 
-.col {
-  padding: 10px;
+.choices button {
+  display: block;
+  background-color: powderblue;
+  border-bottom: 1px solid black;
+  margin: 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
-.quizOptions {
-  background-color: white;
+.a:hover {
+  background-color: black;
+}
+
+input[type="text"] {
+  font-size: 100%;
+}
+
+ol {
+  padding-left: 0px;
+  max-height: 400px;
+  overflow: auto;
+}
+
+li {
+  padding: 5px;
+  list-style: decimal inside none;
+}
+
+li:nth-child(odd) {
+  background-color: #f3edfc;
+}
+
+.wrapper {
+  margin: 100px auto 0 auto;
+  max-width: 600px;
+}
+
+.hide {
+  display: none;
+}
+
+.start {
+  text-align: center;
+}
+
+.feedback {
+  font-style: italic;
+  font-size: 120%;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
   color: black;
-  border: 1px solid black;
-}
-
-.startButton {
-  margin: 20px;
-  radius: 5px;
-}
-
-.startButton:hover {
-  background-color: gray;
-  color: black;
-  border: 1px solid black;
-  border-radius: 5x;
-  -webkit-border-radius: 5x;
-  -moz-border-radius: 5x;
-  -ms-border-radius: 5x;
-  -o-border-radius: 5x;
-}
-
-.quizOptions {
-  margin: 10px;
+  align-items: right;
 }
