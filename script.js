@@ -85,8 +85,8 @@ function displayQuestion() {
   let currentQuestion = quizQuestions[currentQuestionIndex];
 
   // update title with current question
-  let titleEl = document.getElementById("question-title");
-  titleEl.textContent = currentQuestion.title;
+  let questionTitle = document.getElementById("question-title");
+  questionTitle.textContent = currentQuestion.title;
 
   // clear out any old question choices
   quizChoices.innerHTML = "";
@@ -211,8 +211,8 @@ function displayScores() {
     liTag.textContent = score.initials + " - " + score.score;
 
     // display on page
-    let olEl = document.getElementById("initials");
-    olEl.appendChild(liTag);
+    let list = document.getElementById("initials");
+    list.appendChild(liTag);
   });
 }
 
